@@ -1,0 +1,35 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+}
+@media screen and ( max-width: 500px ) { 
+  .container { flex-direction: column; }
+}
+.plotArea, .plotTable {
+  display: relative;
+  top: 80px;
+  height: 80vH;
+  width: 90%;
+}
+.datasetControls, .viewSwitchControl {
+  padding-top: 20px;
+}
